@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Generated simulation results and analysis output
+results/
+**/results/
+figures/
+**/figures/
+
+# Local environments
+.venv/
+venv/
+env/
