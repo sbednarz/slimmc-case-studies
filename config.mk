@@ -7,4 +7,4 @@
 # PYTHON := /home/user/venvs/pyslimmc/bin/python
 
 SLIMMC ?= slimmc
-PYTHON ?= python3
+PYTHON ?= python

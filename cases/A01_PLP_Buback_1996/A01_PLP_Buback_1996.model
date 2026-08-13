@@ -1,0 +1,38 @@
+desc "Modeling of molecular weight distribution in pulsed laser free-radical homopolymerizations"
+
+param seed 1000
+param kmc_volume 1e-13
+# total simulation time 2s
+param t_end 2
+param output_dir "results"
+
+monomer MMA 9.18 100.12
+species R 0
+polymer P active
+polymer D dead
+
+rate ki 4800
+rate kp 480
+
+# only termination by disproportionation
+rate ktc 0
+rate ktd 2.5e7
+
+
+macro init R + MMA -> P ki
+macro prop P + MMA -> P kp
+macro term_c P + P -> D ktc
+macro term_d P + P -> D + D ktd
+
+# each laser pulse adds 5e-7 mol/L primary radicals
+# 20 pulses, prr of 10 Hz
+from 0.0 repeat 20 every 0.1 add_c R 5e-7
+
+# save state
+every 0.1 save
+# save macromolecular state
+every 0.1 save_chains
+
+every 0.1 print_info
+
+

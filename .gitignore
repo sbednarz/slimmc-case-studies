@@ -9,6 +9,7 @@ results/
 **/results/
 figures/
 **/figures/
+**/slurm_logs/
 
 # Local environments
 .venv/

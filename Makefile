@@ -2,7 +2,7 @@
 
 include config.mk
 
-CASES := $(notdir $(patsubst %/Makefile,%,$(wildcard cases/[0-9][0-9][0-9]_*/Makefile)))
+CASES := $(notdir $(patsubst %/Makefile,%,$(wildcard cases/[A-Z][0-9][0-9]_*/Makefile)))
 
 .PHONY: help list all clean $(CASES)
 
@@ -14,7 +14,7 @@ help:
 	@echo "  make <name>"
 	@echo ""
 	@echo "Example:"
-	@echo "  make 001_case_name"
+	@echo "  make A01_case_name"
 	@echo ""
 	@echo "SLIMMC=$(SLIMMC)"
 	@echo "PYTHON=$(PYTHON)"
