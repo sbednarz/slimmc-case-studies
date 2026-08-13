@@ -92,15 +92,13 @@ which gives
 
 `M0 ≈ 4.4e4 g/mol`.
 
-## 5. Reproduction target
+## 5. Comparison with literature
 
-The reproduction target is the mass-weighted molecular-weight distribution
+The reproduction target is the mass-weighted molecular-weight distribution `dw/dlog10(M)` shown in **Fig. 1 of [1]**.
+The Slimmc result is compared directly with the digitized reference curve on the same `log10(M)` coordinate:
 
-`dw/dlog10(M)`
+<img src="fig1.png" width="50%">
 
-shown in **Fig. 1 of [1]**.
-
-The Slimmc result is compared directly with the digitized reference curve on the same `log10(M)` coordinate.
 
 ## 6. Expected result and acceptance criterion
 
