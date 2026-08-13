@@ -94,17 +94,13 @@ which gives
 
 ## 5. Comparison with literature
 
-The reproduction target is the mass-weighted molecular-weight distribution `dw/dlog10(M)` shown in **Fig. 1 of [1]**.
-The Slimmc result is compared directly with the digitized reference curve on the same `log10(M)` coordinate:
+The reproduction target is the mass-weighted molecular-weight distribution `dw/dlog10(M)` shown in **Fig. 1 of [1]**. The Slimmc result is compared directly with the digitized reference curve on the same `log10(M)` coordinate:
 
-<img src="fig1.png" width="50%">
+<img src="fig1.png" width="600">
 
+## 6. Remarks
 
-## 6. Expected result and acceptance criterion
-
-The reproduction is considered successful if the principal PLP features occur at approximately the same molar masses as in the digitized reference curve and the overall distribution shape is reproduced.
-
-The dominant first feature should occur close to `M0`, with subsequent structure appearing near higher multiples of this characteristic molar-mass increment.
+The slimmc-calculated MWD (blue line) closely reproduces the digitized reference curve from Fig. 1 of [1] (dashed line), including the positions and relative amplitudes of the characteristic PLP features.
 
 ## 7. Limitations
 
