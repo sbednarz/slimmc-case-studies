@@ -64,14 +64,14 @@ Each laser pulse is represented as an instantaneous addition of primary radicals
 | Parameter | Value | Origin |
 |---|---:|---|
 | `[MMA]0` | 9.18 mol/L | calculated from MMA density and molar mass |
-| `M_MMA` | 100.12 g/mol | physical property of MMA |
-| `ki` | 4800 L/(mol s) | assumed effective initiation coefficient |
-| `kp` | 480 L/(mol s) | taken from [1] |
-| `ktc` | 0 L/(mol s) | assumed; combination disabled |
-| `ktd` | 2.5e7 L/(mol s) | taken from [1] |
-| radical increment | 5e-7 mol/L per pulse | taken from [1] |
-| pulse repetition rate | 10 Hz | taken from [1] |
-| number of pulses | 20 | simulation setting |
+| `M_MMA` | 100.12 g/mol | - |
+| `ki` | 4800 L/(mol s) | taken from [1] |
+| `kp` | 480 L/(mol s) | [1] |
+| `ktc` | 0 L/(mol s) | [1]; combination disabled |
+| `ktd` | 2.5e7 L/(mol s) | [1] |
+| radical increment | 5e-7 mol/L per pulse | [1] |
+| pulse repetition rate | 10 Hz | [1] |
+| number of pulses | 20 | [1] |
 | `t_end` | 2 s | simulation setting |
 | `kmc_volume` | 1e-13 L | numerical simulation setting |
 | `seed` | 1000 | numerical simulation setting |
