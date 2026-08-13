@@ -9,6 +9,13 @@ small teaching workflows; case studies should document the scientific source,
 assumptions, parameter provenance, comparison target, and interpretation of the
 result.
 
+## Index
+
+| ID | Case study | Description |
+|---:|---|---|
+| [A01](cases/A01_PLP_Buback_1996/README.md) | Buback 1996 - Pulsed Laser Polymerization (PLP) | Reproduction of the characteristic PLP structure of the MWD |
+
+
 ## Running case studies
 
 Tool commands are configured once in `config.mk`:
@@ -42,9 +49,5 @@ cases/LNN_short_name/
 ├── analyze.py
 ```
 
-## Index
 
-| ID | Case study | Description |
-|---:|---|---|
-| A01 | Buback 1996 - Pulsed Laser Polymerization (PLP) | Reproduction of the characteristic PLP structure of the MWD |
 
