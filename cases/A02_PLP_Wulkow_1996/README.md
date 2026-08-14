@@ -1,6 +1,6 @@
 # A02 PLP Wulkow 1996
 
-## 1. Scientific question
+## 1. Objective
 
 Can Slimmc reproduce the characteristic dead-polymer chain-length distribution shown 
 in **Fig. 4.3 of Wulkow [1]** for pulsed-laser polymerization (PLP)?
