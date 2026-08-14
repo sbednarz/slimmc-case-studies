@@ -9,8 +9,6 @@ Can Slimmc reproduce the molecular-weight distribution shown in **Fig. 1 of Buba
 
 The Slimmc model contains MMA, primary radicals `R`, active polymer chains `P`, and dead polymer chains `D`. The mechanism includes initiation, propagation, and termination by disproportionation.
 
-The relevant part of the model file is:
-
 ```code
 
 desc "Modeling of molecular weight distribution in pulsed laser free-radical homopolymerizations"
