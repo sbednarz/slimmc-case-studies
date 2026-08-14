@@ -4,12 +4,8 @@
 
 Can Slimmc reproduce the molecular-weight distribution shown in **Fig. 1 of Buback et al. [1]** for pulsed-laser polymerization (PLP) of methyl methacrylate (MMA)?
 
-## 2. Source
 
-The reference case is **Fig. 1 of Buback et al. [1]**.
-The reference curve used for comparison was digitized from the published figure.
-
-## 3. Model
+## 2. Model
 
 The Slimmc model contains MMA, primary radicals `R`, active polymer chains `P`, and dead polymer chains `D`. The mechanism includes initiation, propagation, and termination by disproportionation.
 
@@ -59,7 +55,7 @@ every 0.1 print_info
 
 Each laser pulse is represented as an instantaneous addition of primary radicals. Twenty pulses are applied at a pulse repetition rate of 10 Hz.
 
-## 4. Parameters
+## 3. Parameters
 
 | Parameter | Value | Origin |
 |---|---:|---|
@@ -92,22 +88,22 @@ which gives
 
 `M0 ≈ 4.4e4 g/mol`.
 
-## 5. Comparison with literature
+## 4. Comparison with literature
 
 The reproduction target is the mass-weighted molecular-weight distribution `dw/dlog10(M)` shown in **Fig. 1 of [1]**. The Slimmc result is compared directly with the digitized reference curve on the same `log10(M)` coordinate:
 
 <img src="fig1.png" width="600">
 
-## 6. Remarks
+## 5. Remarks
 
 The slimmc-calculated MWD (blue line) closely reproduces the digitized reference curve from Fig. 1 of [1] (dashed line), including the positions and relative amplitudes of the characteristic PLP features.
 
-## 7. Limitations
+## 6. Limitations
 
 The reference curve was digitized from Fig. 1 of [1], which introduces a small digitization uncertainty.
 
 The binning or smoothing procedure used to generate the distribution shown in [1] is not known, so small differences in local peak shape and fine structure should not be overinterpreted.
 
-## 8. References
+## 7. References
 
 [1] M. Buback, M. Busch, R. A. Lämmel, “Modeling of molecular weight distribution in pulsed laser free-radical homopolymerizations,” *Macromolecular Theory and Simulations* **5** (1996) 845–861. https://doi.org/10.1002/mats.1996.040050505
