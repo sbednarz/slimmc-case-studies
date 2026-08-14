@@ -3,8 +3,7 @@
 #### The repository contains scientific case studies, validation exercises, and literature-based benchmarks for [slimmc](https://github.com/sbednarz/slimmc), a stochastic kinetic Monte Carlo simulator for radical polymerization.
 
 See also:
-[`slimmc-examples`](https://github.com/sbednarz/slimmc-examples) — small teaching workflows. Case studies document the scientific source, assumptions, parameter provenance, comparison target, and interpretation of the result.
-
+[`slimmc-examples`](https://github.com/sbednarz/slimmc-examples) - small teaching workflows for [slimmc](https://github.com/sbednarz/slimmc).
 
 ## Index
 
