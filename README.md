@@ -12,7 +12,7 @@ result.
 
 | ID | Graph | Case study | Description |
 |---:|:---:|---|---|
-| [A01](cases/A01_PLP_Buback_1996/) | <img src="cases/A01_PLP_Buback_1996/fig1.png" width="160"> | Buback 1996 - Pulsed Laser Polymerization (PLP) | Reproduction of the characteristic PLP structure of the MWD |
+| [A01](cases/A01_PLP_Buback_1996/) | <img src="cases/A01_PLP_Buback_1996/fig1.png" width="200"> | M. Buback, M. Busch, R. A. Lämmel, “Modeling of molecular weight distribution in pulsed laser free-radical homopolymerizations,” *Macromolecular Theory and Simulations* **5** (1996) 845–861. https://doi.org/10.1002/mats.1996.040050505 | Reproduction of the characteristic PLP structure of the MWD |
 
 ## Running case studies
 
