@@ -1,6 +1,6 @@
 # A01 PLP Buback 1996
 
-## 1. Scientific question
+## 1. Objective
 
 Can Slimmc reproduce the molecular-weight distribution shown in **Fig. 1 of Buback et al. [1]** for pulsed-laser polymerization (PLP) of methyl methacrylate (MMA)?
 
