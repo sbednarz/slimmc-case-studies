@@ -11,10 +11,9 @@ result.
 
 ## Index
 
-| ID | Case study | Description |
-|---:|---|---|
-| [A01](cases/A01_PLP_Buback_1996/) | Buback 1996 - Pulsed Laser Polymerization (PLP) | Reproduction of the characteristic PLP structure of the MWD |
-
+| ID | Graph | Case study | Description |
+|---:|:---:|---|---|
+| [A01](cases/A01_PLP_Buback_1996/) | <img src="cases/A01_PLP_Buback_1996/fig1.png" width="160"> | Buback 1996 - Pulsed Laser Polymerization (PLP) | Reproduction of the characteristic PLP structure of the MWD |
 
 ## Running case studies
 
