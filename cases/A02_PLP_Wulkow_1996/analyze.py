@@ -65,7 +65,7 @@ cld = run.cld(snapshot="final", pool="dead",
 for L in [L1, L2, L3]:
     plt.axvline(L, linestyle="--", color='black')
 plt.plot(cld.x, cld.y, 'c-', label='slimmc')
-plt.plot(x,4e6*y,'k-',label='Wulkow (1996), Fig.4.3')
+plt.plot(x,4e6*y,'k-',label='Wulkow (1996), Fig.4.3 (Y values scaled)')
 
 plt.gca().xaxis.set_major_locator(plt.MultipleLocator(200))
 plt.gca().yaxis.set_major_locator(plt.MultipleLocator(2e5))
