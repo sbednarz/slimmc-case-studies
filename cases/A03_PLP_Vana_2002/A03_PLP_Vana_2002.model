@@ -1,6 +1,6 @@
 desc "PLP DMI, Vana et al. 2002, Fig. 3"
 
-param kmc_volume 1.0e-13
+param kmc_volume 1.0e-12
 param temperature 313.15
 param t_end 50.0
 param max_steps 100000000000
