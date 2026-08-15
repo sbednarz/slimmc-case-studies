@@ -1,7 +1,7 @@
 desc "Modeling of molecular weight distribution in pulsed laser free-radical homopolymerizations"
 
 param seed 1000
-param kmc_volume 1e-13
+param kmc_volume 1e-12
 # total simulation time 2s
 param t_end 2
 param output_dir "results"

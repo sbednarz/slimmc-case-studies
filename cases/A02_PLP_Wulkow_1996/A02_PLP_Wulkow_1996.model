@@ -15,7 +15,10 @@ rate ki 120
 rate kp 120
 # termination by disproportionation only
 rate ktc 0
-rate ktd 3e7
+# Wulkow (1996) uses ktd = 3.0e7 L mol-1*s-1 in the
+# radical-disappearance convention; slimmc P+P uses the
+# reaction-event rate constant, therefore ktd = 3.0e7/2
+rate ktd 1.5e7
 
 macro init R + M -> P ki
 macro prop P + M -> P kp

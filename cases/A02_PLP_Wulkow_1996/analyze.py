@@ -47,35 +47,70 @@ run = sl.open("results")
 
 # %%
 
-M0 = 9 # mol/L
-t0 = 0.4 #s
-kp = 120 #mol/L*s
+M0 = 9.0      # mol/L
+t0 = 0.4      # s
+kp = 120.0    # L mol^-1 s^-1
 
 # theoretical inflection points
 L0 = M0 * t0 * kp
 L1 = L0
-L2 = 2*L0
-L3 = 3*L0
+L2 = 2 * L0
+L3 = 3 * L0
 
-cld = run.cld(snapshot="final", pool="dead", 
-              basis="mass", method="sticks", 
-              normalization="absolute", 
-              output="amount")
+# Slimmc mass-weighted CLD
+cld = run.cld(
+    snapshot="final",
+    pool="dead",
+    weighting="mass",
+)
+
+# Scale only the digitized Wulkow curve
+# to the maximum of the native Slimmc CLD
+y_wulkow_scaled = y * (cld.y.max() / y.max())
+
+plt.figure(figsize=(6, 4))
 
 for L in [L1, L2, L3]:
-    plt.axvline(L, linestyle="--", color='black')
-plt.plot(cld.x, cld.y, 'c-', label='slimmc')
-plt.plot(x,4e6*y,'k-',label='Wulkow (1996), Fig.4.3 (Y values scaled)')
+    plt.axvline(
+        L,
+        linestyle="--",
+        color="black",
+    )
 
-plt.gca().xaxis.set_major_locator(plt.MultipleLocator(200))
-plt.gca().yaxis.set_major_locator(plt.MultipleLocator(2e5))
+plt.plot(
+    cld.x,
+    cld.y,
+    "c-",
+    label="slimmc",
+)
+
+plt.plot(
+    x,
+    y_wulkow_scaled,
+    "k-",
+    label="Wulkow (1996), Fig. 4.3 (Y scaled)",
+)
+
+plt.gca().xaxis.set_major_locator(
+    plt.MultipleLocator(200)
+)
+
 plt.grid(True)
-plt.legend(loc="upper center", 
-           bbox_to_anchor=(0.5, 1.15), ncol=2, frameon=False)
+
+plt.legend(
+    loc="upper center",
+    bbox_to_anchor=(0.5, 1.15),
+    ncol=2,
+    frameon=False,
+)
+
 plt.xlim(0, 2000)
 plt.xticks(range(0, 2001, 200))
-plt.xlabel('Chain length')
-plt.ylabel(r"$D_s\,s$ (DP-weighted dead-chain amount)")
+
+plt.xlabel("Chain length")
+plt.ylabel(r"$D_s\,s$ (DP-weighted dead-chain fraction)")
+
 plt.tight_layout()
 plt.savefig("fig4.3.png", dpi=300)
+plt.close()
 

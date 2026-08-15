@@ -40,25 +40,17 @@ run = sl.open("results")
 
 # %%
 
-mwd_log = run.mwd(
-    snapshot="final",
-    pool="dead",
-    basis="mass",
-    coordinate="log10",
-    method="hist",
-    bin_width=0.03,
-    output="density",
-)
+mwd = run.mwd()
 
 plt.figure(figsize=(5, 3))
 
 #for x in [np.log10(M0), np.log10(2*M0), np.log10(3*M0), np.log10(4*M0)]:
 #    plt.axvline(x=x, linestyle="-", linewidth=0.5, color='black')
 
-plt.plot(mwd_log.log10_x, mwd_log.y, 'c-', label='slimmc')
+plt.plot(mwd.x, mwd.y, 'c-', label='slimmc')
 plt.plot(buback1996_logM, buback1996_wlogM, 'k--', label='Buback et al. (1996), Fig. 1')
 
-plt.xlabel("log$_{10}$(M), g mol$^{-1}$")
+plt.xlabel("log$_{10}$(M / g mol$^{-1}$)")
 plt.ylabel("dw/dlog$_{10}$(M)")
 plt.xlim(3.5,6.0)
 plt.legend(loc="upper center", bbox_to_anchor=(0.5, 1.15), ncol=2, frameon=False)
