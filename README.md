@@ -11,7 +11,7 @@ See also:
 |---:|:---:|---|---|
 | [A01](cases/A01_PLP_Buback_1996/) | <img src="cases/A01_PLP_Buback_1996/fig1.png" width="200"> | M. Buback, M. Busch, R. A. Lämmel, "Modeling of molecular weight distribution in pulsed laser free-radical homopolymerizations," *Macromolecular Theory and Simulations* **5** (1996) 845–861. https://doi.org/10.1002/mats.1996.040050505 | Reproduction of the characteristic PLP structure of the MWD |
 | [A02](cases/A02_PLP_Wulkow_1996/) | <img src="cases/A02_PLP_Wulkow_1996/fig4.3.png" width="200"> | M. Wulkow, "PREDICI - A Software Package for Real-life Polymerisation Kinetics," in Progress in Industrial Mathematics at ECMI 94, H. Neunzert (ed.), John Wiley & Sons / B. G. Teubner, 1996, pp. 166–175. https://doi.org/10.1007/978-3-322-82967-2_20| Reproduction of the characteristic PLP structure of the MWD |
-| [A03](cases/A03_PLP_Vana_2002/) | <img src="cases/A03_PLP_Vana_2002/Fig3.png" width="200"> | P. Vana, L. H. Yee, C. Barner-Kowollik, J. P. A. Heuts, and T. P. Davis, "Termination Rate Coefficient of Dimethyl Itaconate: Comparison of Modeling and Experimental Results,"  *Macromolecules*, **35** (2002), 1651–1657. |
+| [A03](cases/A03_PLP_Vana_2002/) | <img src="cases/A03_PLP_Vana_2002/Fig3.png" width="200"> | P. Vana, L. H. Yee, C. Barner-Kowollik, J. P. A. Heuts, and T. P. Davis, "Termination Rate Coefficient of Dimethyl Itaconate: Comparison of Modeling and Experimental Results,"  *Macromolecules*, **35** (2002), 1651–1657. https://doi.org/10.1021/ma011535v | Reproduction of the characteristic PLP structure of the MWD |
 
 
 
