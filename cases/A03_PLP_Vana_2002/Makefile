@@ -16,4 +16,4 @@ analyze:
 	$(PYTHON) analyze.py
 
 clean:
-	rm -rf results figures slurm_logs
+	rm -rf results fig3.png fig4.png slurm_logs

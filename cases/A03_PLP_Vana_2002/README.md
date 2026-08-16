@@ -111,7 +111,7 @@ The first three theoretical PLP positions are therefore approximately at DP 284,
 
 The first comparison uses the simulated molecular-weight distribution shown in Fig. 3 of [1]. The Slimmc MWD is mass-weighted and expressed as `dW/dlog10(M)`. Both curves are normalized to their maxima for shape comparison.
 
-<img src="Fig3.png" width="600">
+<img src="fig3.png" width="600">
 
 The dotted vertical lines indicate the theoretical PLP positions derived from `n L0`.
 
@@ -121,7 +121,7 @@ The second comparison uses the same simulated distribution after SEC broadening 
 
 as applied by Vana et al. in Fig. 4.
 
-<img src="Fig4.png" width="600">
+<img src="fig4.png" width="600">
 
 After SEC broadening, the Slimmc and literature curves show close agreement in the position and shape of the main peaks and in the high-molecular-weight decay.
 

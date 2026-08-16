@@ -111,6 +111,6 @@ plt.xlabel("Chain length")
 plt.ylabel(r"$D_s\,s$ (DP-weighted dead-chain fraction)")
 
 plt.tight_layout()
-plt.savefig("fig4.3.png", dpi=300)
+plt.savefig("fig4_3.png", dpi=300)
 plt.close()
 

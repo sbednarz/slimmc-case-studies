@@ -86,7 +86,7 @@ after four laser pulses at `t = 4t0`. The distribution in [1] is presented in we
 proportional to `D_s s`, where `D_s` is the concentration of dead chains of length `s`. 
 In slimmc, the corresponding distribution is obtained as a mass-weighted absolute CLD using the virtual repeat-unit molar mass of 1 g/mol.
 
-<img src="fig4.3.png" width="600">
+<img src="fig4_3.png" width="600">
 
 ## 5. Remarks
 

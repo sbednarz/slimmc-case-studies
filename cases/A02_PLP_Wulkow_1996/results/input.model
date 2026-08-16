@@ -1,0 +1,35 @@
+desc "Modeling of molecular weight distribution in pulsed laser free-radical homopolymerizations"
+
+param seed 1000
+param kmc_volume 1e-11
+param t_end 1.6
+param output_dir "results"
+
+# virtual monomer: [M]0 = 9 mol/L, m.w. = 1 g/mol
+monomer M 9 1
+species R 0
+polymer P active
+polymer D dead
+
+rate ki 120
+rate kp 120
+# termination by disproportionation only
+rate ktc 0
+# Wulkow (1996) uses ktd = 3.0e7 L mol-1*s-1 in the
+# radical-disappearance convention; slimmc P+P uses the
+# reaction-event rate constant, therefore ktd = 3.0e7/2
+rate ktd 1.5e7
+
+macro init R + M -> P ki
+macro prop P + M -> P kp
+macro term_c P + P -> D ktc
+macro term_d P + P -> D + D ktd
+
+# four laser pulses, t0 = 0.4 s
+# each pulse activates 1e-7 mol/L primary radicals
+from 0.0 repeat 4 every 0.4 add_c R 1e-7
+every 0.4 print_info
+# Fig. 4.3 corresponds to t = 4 t0 = 1.6 s
+at 1.6 save
+at 1.6 save_chains
+

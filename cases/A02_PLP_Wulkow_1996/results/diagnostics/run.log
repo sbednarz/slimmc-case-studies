@@ -1,0 +1,8 @@
+Slimmc run started at 2026-08-16T16:34:22Z
+[start] run_id=A02_PLP_Wulkow_1996 t_end=1.60e+00 output=results
+[run] event=0 t=0.00e+00/1.60e+00 0.0% conv=M:0.0000 wall=0.1s 2026-08-16T16:34:22Z
+[run] event=171511738 t=4.00e-01/1.60e+00 25.0% conv=M:0.0000 wall=61.3s 2026-08-16T16:35:23Z
+[run] event=391576363 t=8.00e-01/1.60e+00 50.0% conv=M:0.0000 wall=142.6s 2026-08-16T16:36:44Z
+[run] event=618479465 t=1.20e+00/1.60e+00 75.0% conv=M:0.0000 wall=226.5s 2026-08-16T16:38:08Z
+[run] event=846310239 t=1.60e+00/1.60e+00 100.0% conv=M:0.0000 wall=310.7s 2026-08-16T16:39:33Z
+[done] event=846310239 t=1.6 reason=t_end wall=310.91668701171875s

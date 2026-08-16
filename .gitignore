@@ -4,11 +4,6 @@ __pycache__/
 .vscode/
 .idea/
 
-# Generated simulation results and analysis output
-results/
-**/results/
-figures/
-**/figures/
 **/slurm_logs/
 
 # Local environments

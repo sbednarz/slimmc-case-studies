@@ -113,7 +113,7 @@ plt.ylim(0, 1.2)
 
 plt.legend(frameon=False)
 plt.tight_layout()
-plt.savefig("Fig3.png", dpi=300)
+plt.savefig("fig3.png", dpi=300)
 
 # %%
 sec = run.sec(
@@ -132,6 +132,6 @@ plt.xlabel(r"$\log_{10}(M\ /\ \mathrm{g\,mol^{-1}})$")
 plt.ylabel(r"$w_{\log M}$")
 plt.legend(frameon=False)
 plt.tight_layout()
-plt.savefig("Fig4.png", dpi=300)
+plt.savefig("fig4.png", dpi=300)
 
 
